@@ -5,9 +5,9 @@
 # NOTE: it looks like you need to rebuild + repush everytime you update this _config.yml file
 
 ### Site Settings ###
-title               : IS445 Jekyll Template 
+title               : IS445 Lei Zhu's Repo
 description         : >-
-                      I am definitely not a corgi!
+                      This is a repository for Lei Zhu's IS445 class
 baseurl             : ""   # Change to empty quotes if you are hosting your site at <your-username>.github.io directly,
 #                                             otherwise will be hosted at <your-username>.github.io/{{base_url}}
 repository          :                     # Change to <your-username> for github OR, if that doesn't work <your-username>/<your-username>.github.io (or remove it if you don't need remote projects) -- for example, I would put "jnaiman" without the quotes after the ":" here
@@ -34,13 +34,13 @@ nav_exclude:                                            # The following paths ar
 
 ### Author Info ###
 author:
-  name              : A. P. Corgi
+  name              : Lei Zhu
   image             : https://source.unsplash.com/300x300/?corgi&derpy
 #  behance           : your_username
 # dribbble          : your_username
-  email             : username@domain.com
+  email             : vincent0414zhu@outlook.com
 #  facebook          : your_username
-  github            : jnaiman # JPN
+  github            : Vincent-Zhul # JPN
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username
