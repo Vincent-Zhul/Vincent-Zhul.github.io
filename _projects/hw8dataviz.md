@@ -1,7 +1,7 @@
 ---
 name: HW8 Visualization
 tools: [Python, Altair, Vega-Lite]
-image: assets/pngs/scatterplot.png
+image: assets/pngs/scatter_plot.png
 description: This project showcases interactive visualizations using Vega-Lite.
 custom_js:
   - vega.min
