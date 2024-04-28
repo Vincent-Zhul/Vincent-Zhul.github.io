@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+  Updates for JPN Spring 2023
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Magnificent Seven and S&amp;P 500 ETF Data Analysis">
+  <meta property="og:description" content="This project showcases interactive visualizations using Python.">
+  <meta property="og:image" content="assets/pngs/plot1_1.png">
+
+  <title>The Magnificent Seven and S&amp;P 500 ETF Data Analysis</title>
+  <meta name="description" content="This project showcases interactive visualizations using Python.">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>IS445 Lei Zhu's Repo</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="project-name">Project Name</h1>
+<p>The Magnificent Seven and S&amp;P 500 ETF Data Analysis</p>
+
+<h2 id="project-goal">Project Goal</h2>
+<p>This project aims to provide insights through the analysis of daily stock data from Magnificent Seven (consisting of seven top US technology companies, including Apple, Microsoft, Amazon, Google, Facebook, Tesla, and Netflix) and the S&amp;P 500 ETF, in order to help investors understand market trends and industry dynamics. The core goal of the project is to design and implement a series of data visualization tools that can reveal the performance, volatility, interrelationships, and correlation with the overall market trends of these stocks.</p>
+
+<h2 id="data-source-description">Data Source Description</h2>
+
+<ul>
+  <li><strong>Name of the dataset</strong>: This dataset contains stock prices and trading volume information obtained from Yahoo Finance. Specifically, we have focused on the following stocks: Apple (AAPL), Microsoft (MSFT), Amazon (AMZN), Google (GOOGL), Facebook (FB), Tesla (TSLA), Netflix (NFLX), and the S&amp;P 500 ETF (SPY);</li>
+  <li><strong>Obtain source</strong>: The data is obtained through Yahoo Finance’s public API and downloaded using the yfinance Python library;</li>
+  <li><strong>Access</strong>: Data can be accessed using the yfinance library through any device with an Internet connection. The yfinance library encapsulates Yahoo Finance’s API, making data retrieval simpler and more convenient;</li>
+  <li><strong>License</strong>: The data provided by Yahoo Finance is mainly used for personal and non-commercial purposes. The yfinance library is released under the MIT license.</li>
+</ul>
+
+<h2 id="data-visualizations">Data Visualizations</h2>
+<p>Below are the interactive charts that created using Python:</p>
+
+<h3 id="plot-1-trend-chart">Plot 1 Trend Chart</h3>
+
+<p>[<img src="https://raw.githubusercontent.com/Vincent-Zhul/Vincent-Zhul.github.io/main/assets/pngs/plot1_1.png" alt="Trend Chart" />]</p>
+
+<h4 id="description">Description</h4>
+
+<p>Create a trend chart to show the adjusted closing price trend of “Magnificent Seven” technology companies and the Nasdaq Composite Index. By observing curves of different colors, we can evaluate the changes in stock prices of each company over time and compare them with the overall performance of the Nasdaq index. If most stock price curves show a trend similar to the Nasdaq index, it indicates that the performance of these technology stocks is closely related to the overall market; If a company’s stock price trend significantly deviates from the Nasdaq index, it may indicate that the company has been affected by specific market forces or internal events.</p>
+
+<h3 id="plot-2-average-transaction-volume-analysis-chart">Plot 2 Average transaction volume analysis chart</h3>
+
+<p>[<img src="https://raw.githubusercontent.com/Vincent-Zhul/Vincent-Zhul.github.io/main/assets/pngs/plot2.png" alt="Average transaction volume analysis chart" />]</p>
+
+<h4 id="description-1">Description</h4>
+
+<p>This bar chart can be used to display the average daily trading volume of a selected company over a certain time range. Through this approach, investors can quickly identify which stocks have high liquidity, which may mean that these stocks are easier to buy and sell and usually receive more market attention. A higher trading volume usually indicates higher liquidity, which is an important indicator for investors who want to quickly enter and exit the market. Trading volume can also serve as an indicator of market interest in a particular stock. An abnormally high trading volume may indicate significant news or event driven events. Stocks with high trading volume may have greater price fluctuations, which is a key factor for traders seeking high volatility trading opportunities.</p>
+
+<h3 id="plot-3-box-plot">Plot 3 Box Plot</h3>
+
+<p>[<img src="https://raw.githubusercontent.com/Vincent-Zhul/Vincent-Zhul.github.io/main/assets/pngs/plot3.png" alt="Box Plot" />]</p>
+
+<h4 id="description-2">Description</h4>
+
+<p>Purpose: A box plot provides a visual summary of the distribution of a dataset. It highlights the median, quartiles, and potential outliers within the data.</p>
+
+<p>Use in Finance: For stock prices, it can show the range of closing prices over a period, identify stocks with high volatility, and detect outliers that might indicate unusual trading activity.</p>
+
+<h3 id="plot-4-correlation-heatmap">Plot 4 Correlation Heatmap</h3>
+
+<p>[<img src="https://raw.githubusercontent.com/Vincent-Zhul/Vincent-Zhul.github.io/main/assets/pngs/plot4.png" alt="Correlation Heatmap" />]</p>
+
+<h4 id="description-3">Description</h4>
+
+<p>Purpose: A correlation heatmap visualizes the correlation coefficients between pairs or groups of variables.</p>
+
+<p>Use in Finance: This helps in understanding how different stocks move in relation to each other, which is crucial for diversification and risk management in a portfolio. High correlation coefficients indicate that stocks tend to move together, whereas low correlation coefficients suggest more diversification benefits.</p>
+
+<h3 id="plot-5-moving-average-line-chart">Plot 5 Moving Average Line Chart</h3>
+
+<p>[<img src="https://raw.githubusercontent.com/Vincent-Zhul/Vincent-Zhul.github.io/main/assets/pngs/plot5.png" alt="Moving Average Line Chart" />]</p>
+
+<h4 id="description-4">Description</h4>
+
+<p>Purpose: A moving average smooths out price data by creating a constantly updated average price. This helps in identifying trends over a period.</p>
+
+<p>Use in Finance: The moving average is useful for detecting trends and potential turning points in stock prices, providing insights for entry and exit trading strategies.</p>
+
+<h3 id="plot-6-volume-weighted-average-price-vwap">Plot 6 Volume Weighted Average Price (VWAP)</h3>
+
+<p>[<img src="https://raw.githubusercontent.com/Vincent-Zhul/Vincent-Zhul.github.io/main/assets/pngs/plot6.png" alt="Volume Weighted Average Price" />]</p>
+
+<h4 id="description-5">Description</h4>
+
+<p>Purpose: VWAP gives the average price a stock has traded throughout the day, based on volume and price. It is important because it provides traders with insight into both the trend and value of a stock.</p>
+
+<p>Use in Finance: Traders use VWAP to ensure they are getting a favorable price on their trades relative to the volume-weighted price, which can be particularly useful for large orders.</p>
+
+<h3 id="plot-7-daily-return-distribution-chart">Plot 7 Daily Return Distribution Chart</h3>
+
+<p>[<img src="https://raw.githubusercontent.com/Vincent-Zhul/Vincent-Zhul.github.io/main/assets/pngs/plot7.png" alt="Daily Return Distribution Chart" />]</p>
+
+<h4 id="description-6">Description</h4>
+
+<p>Purpose: This chart shows the frequency distribution of daily returns of a stock, helping to understand its volatility and the normality of its return distribution.</p>
+
+<p>Use in Finance: Analyzing the distribution helps in risk assessment, where wider distributions indicate higher volatility and potential for large price swings, impacting investment decisions.</p>
+
+<h3 id="plot-8-accumulated-revenue-chart">Plot 8 Accumulated Revenue Chart</h3>
+
+<p>[<img src="https://raw.githubusercontent.com/Vincent-Zhul/Vincent-Zhul.github.io/main/assets/pngs/plot8.png" alt="Accumulated Revenue Chart" />]</p>
+
+<h4 id="description-7">Description</h4>
+
+<p>Purpose: This chart accumulates revenue calculations over a period to show growth or decline.</p>
+
+<p>Use in Finance: Although “revenue” here is an abstract notion (assuming revenue from sales at closing price multiplied by volume), this can illustrate trading volume and revenue potential over time, useful for analyzing market activity and liquidity trends.</p>
+
+<h3 id="plot-9-interactive-scatter-plot">Plot 9 Interactive Scatter Plot</h3>
+
+<p>[<img src="https://raw.githubusercontent.com/Vincent-Zhul/Vincent-Zhul.github.io/main/assets/pngs/plot9.png" alt="Interactive Scatter Plot" />]</p>
+
+<h4 id="description-8">Description</h4>
+
+<p>Purpose: An interactive scatter plot allows for dynamic visualization where users can explore specific data points by interacting with the plot.</p>
+
+<p>Use in Finance: This can be used to investigate relationships between different variables (like closing price and volume), spot anomalies, and identify patterns across different time frames or conditions.</p>
+
+<div class="left">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://finance.yahoo.com/quote/SPY?.tsrc=fin-srch">
+  The Data
+</a>
+</div>
+
+<div class="right">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/Vincent-Zhul/Vincent-Zhul.github.io/blob/main/python_notebooks/IS445_Data_Viz_Final_Proj.ipynb">
+  The Notebook
+</a>
+</div>
+
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Lei Zhu</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:vincent0414zhu@outlook.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/Vincent-Zhul"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.youtube.com/your_channel_name"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#ff0000'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-youtube fa-1x"></i>
+    </a>
+
+</div>
+
+  Theme by <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a> and <a href="https://github.com/4dcu-be/4dcu.be">4dcu.be</a>.
+
+  
+<!--<small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+-->
+
+</footer>
+
+
+<!-- Custom page specific js files -->
+  
+    <script src='/assets/js/vega.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-lite.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-embed.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/justcharts.js' type="text/javascript"></script>
+  
+
+
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+<!--
+end of checks! JPN
+-->
+
+</html>
